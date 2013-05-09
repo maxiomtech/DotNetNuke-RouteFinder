@@ -1,0 +1,26 @@
+﻿.iit-routeFinder ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.iit-routeFinder ul li {
+  list-style-type: none;
+  list-style: none;
+  border-style: solid;
+  padding: 6px 12px 6px 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+}
+.iit-routeFinder ul li.hdr {
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f2f1 100%);
+  color: #333;
+  padding: 6px 12px 6px 12px;
+  border: 0;
+  border-bottom: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+  font-weight: bold;
+}
+.iit-routeFinder ul li.odd {
+  background-color: #F2F2F2;
+}

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="InspectorIT.RouteFinder" type="Module" version="1.0.0.0">
+      <friendlyName>Route Finder</friendlyName>
+      <description>Dashboard Component or Standalone module to identify all the active WebAPI routes in your installation</description>
+      <iconFile>DesktopModules/InspectorIT/RouteFinder/images/icon.png</iconFile>
+      <owner>
+        <name>Jonathan Sheely</name>
+        <organization>InspectorIT</organization>
+        <url>http://inspectorit.com</url>
+        <email>jsheely@inspectorit.com</email>
+      </owner>
+      <license src="License.htm" />
+      <releaseNotes src="ReleaseNotes.htm" />
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>InspectorIT.RouteFinder</moduleName>
+            <foldername>InspectorIT/RouteFinder</foldername>
+            <businessControllerClass>InspectorIT.RouteFinder.Components.DnnController</businessControllerClass>
+            <supportedFeatures />
+            <shareable>Unsupported</shareable>
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Route Finder</friendlyName>
+                <definitionName>Route Finder</definitionName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/InspectorIT/RouteFinder/loader.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <supportsPopUps>False</supportsPopUps>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>InspectorIT.RouteFinder.Components.DnnController</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList />
+            </attributes>
+          </eventMessage>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>InspectorIT.RouteFinder.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules\InspectorIT\RouteFinder</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+              <sourceFileName>Resources.zip</sourceFileName>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+    <package name="InspectorIT.RouteFinder" type="DashboardControl" version="1.0.0.0">
+      <friendlyName>Route Finder</friendlyName>
+      <description>Dashboard Component or Standalone module to identify all the active WebAPI routes in your installation</description>
+      <iconFile>DesktopModules/InspectorIT/RouteFinder/images/icon.png</iconFile>
+      <owner>
+        <name>Jonathan Sheely</name>
+        <organization>InspectorIT</organization>
+        <url>http://inspectorit.com</url>
+        <email>jsheely@inspectorit.com</email>
+      </owner>
+      <license src="License.htm" />
+      <releaseNotes src="ReleaseNotes.htm" />
+      <components>
+        <component type="DashboardControl">
+          <dashboardControl>
+            <key>WebAPI</key>
+            <src>DesktopModules/InspectorIT/RouteFinder/Loader.ascx</src>
+            <localResources>DesktopModules/InspectorIT/RouteFinder/App_LocalResources/SharedResources.ascx</localResources>
+            <controllerClass>InspectorIT.RouteFinder.Components.DnnController</controllerClass>
+            <isEnabled>true</isEnabled>
+            <viewOrder>7</viewOrder>
+          </dashboardControl>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
