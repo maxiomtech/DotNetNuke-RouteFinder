@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="InspectorIT.RouteFinder" type="Module" version="1.0.0.0">
+    <package name="InspectorIT.RouteFinder" type="Module" version="1.0.21.0">
       <friendlyName>Route Finder</friendlyName>
       <description>Dashboard Component or Standalone module to identify all the active WebAPI routes in your installation</description>
       <iconFile>DesktopModules/InspectorIT/RouteFinder/images/icon.png</iconFile>
