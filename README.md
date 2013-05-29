@@ -8,6 +8,9 @@ Dashboard Component or Standalone module to identify all the active WebAPI route
 
 Note: This is a initial version requirement. May change in the future to support older versions.
 
+### Fun Facts
+- Illustrates how to build a dashboard integration module
+
 ### Screenshot
 
 ![ScreenShot](https://dl.dropboxusercontent.com/u/10620012/DotNetNuke-RouteFinder.png)
